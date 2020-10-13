@@ -1,0 +1,10 @@
+{
+    "name": "weight_recorder",
+    "version": "1.0.0",
+    "description": "体重記録簿",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "license": "MIT"
+}
