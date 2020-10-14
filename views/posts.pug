@@ -7,8 +7,20 @@ html(lang="ja")
     h1 体重記録簿
     a(href='/logout') ログアウト
     form(method="post" action="/posts")
-      div
-        p 〇月〇日
-        textarea(name="weight" cols=10 rows=1)
-      div
-        button(type="submit") 登録
+      table
+        tr
+          td !{today}
+          td
+            textarea(name="weight" cols=10 rows=1)
+          td
+            button(type="submit") 登録
+    h1 記録一覧
+    table
+      tr
+        each item in data
+          td
+            | !{item.date}
+      tr
+        each item in data
+          td
+            | !{item.weight}
