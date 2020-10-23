@@ -17,14 +17,14 @@ html(lang="ja")
     h1 記録一覧
     table
       tr
+        td(style="cursor:pointer;text-align:left" id="prev-week") <
         each item in data
-          td
-            | !{item.date}
-      tr
-        each item in data
-          td
+          td(style="cursor: pointer; text-align: center;") 
+            | !{item.date}<br>
             | !{item.day}
+        td(style="cursor:pointer;text-align:right" id="next-week") >
       tr
+        td
         each item in data
-          td
-            | !{item.weight}
+          td(style="text-align:center") !{item.weight}
+        td
